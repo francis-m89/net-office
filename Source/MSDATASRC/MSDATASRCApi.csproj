@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>MSDATASRC</AssemblyTitle>
+    <Description>Netoffice MSDATASRC Api</Description>
+    <RootNamespace>NetOffice.MSDATASRCApi</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" />
+  </ItemGroup>
+</Project>

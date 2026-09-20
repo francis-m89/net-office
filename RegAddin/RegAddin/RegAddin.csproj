@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <RootNamespace>RegAddin</RootNamespace>
+    <AssemblyName>RegAddin</AssemblyName>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Copyright>Copyright © 2016 Sebastian Lange</Copyright>
+    <Description>Register/Unregister MS-Office Addins</Description>
+    <Company>http://netoffice.codeplex.com</Company>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\Source\NetOffice.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\Source\NetOffice.snk">
+      <Link>NetOffice.snk</Link>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>DAO</AssemblyTitle>
+    <Description>Netoffice DAO Api</Description>
+    <RootNamespace>NetOffice.DAOApi</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" />
+  </ItemGroup>
+</Project>

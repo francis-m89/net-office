@@ -1,0 +1,7 @@
+﻿	Public Sub AboutButton_Click(ByVal control As Office.IRibbonControl)
+
+		Utils.Dialog.ShowAbout("$safeprojectname$", "<your url here>", "<No License set>")
+
+	End Sub
+
+$tooglecode$

@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>NetOffice.Tests</AssemblyTitle>
+    <Description>NetOffice unit tests</Description>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS0067</NoWarn>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.4.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Tests\NoAssemblyTitle\NoAssemblyTitle.csproj" />
+    <ProjectReference Include="..\Access\AccessApi.csproj" />
+    <ProjectReference Include="..\Excel\ExcelApi.csproj" />
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" />
+    <ProjectReference Include="..\Outlook\OutlookApi.csproj" />
+    <ProjectReference Include="..\PowerPoint\PowerPointApi.csproj" />
+    <ProjectReference Include="..\Word\WordApi.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NetOffice\Tools\data\NativeAddinResiliency.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NetOffice\Tools\data\NetFrameworkAddinResiliency.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\SampleIcon.ico" />
+    <EmbeddedResource Include="Data\SampleImage.png" />
+    <EmbeddedResource Include="Data\SampleText.txt" />
+  </ItemGroup>
+</Project>

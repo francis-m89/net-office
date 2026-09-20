@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>Office</AssemblyTitle>
+    <Description>Netoffice Office Api</Description>
+    <RootNamespace>NetOffice.OfficeApi</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>NetOfficeFw.Office</PackageId>
+    <PackageTags>netoffice netofficefw NetOffice.Office office interop wrapper vsto addin</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+
+  <PropertyGroup>
+    <AssemblySearchPaths>$(AssemblySearchPaths);{GAC}</AssemblySearchPaths>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="stdole" Version="[7.0.3300,)" NoWarn="NU1701" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" />
+  </ItemGroup>
+</Project>

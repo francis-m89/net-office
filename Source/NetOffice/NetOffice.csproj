@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>NetOffice</AssemblyTitle>
+    <Description>NetOffice core library</Description>
+    <RootNamespace>NetOffice</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>NetOfficeFw.Core</PackageId>
+    <PackageTags>netoffice netofficefw NetOffice.Core office excel word outlook powerpoint access interop wrapper vsto addin</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Contribution\Controls\InstanceMonitor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Contribution\Controls\InstanceMonitor.designer.cs">
+      <DependentUpon>InstanceMonitor.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Factory.cs" />
+    <Compile Remove="Tools\ErrorHandlerAttribute.cs" />
+    <Compile Remove="Tools\ErrorHandlerFunctionAttribute.cs" />
+    <Compile Remove="Tools\IErrorHandler.cs" />
+  </ItemGroup>
+</Project>

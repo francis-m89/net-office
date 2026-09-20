@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>NetOffice.AccessApi</AssemblyTitle>
+    <Description>NetOffice Access library</Description>
+    <RootNamespace>NetOffice.AccessApi</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>NetOfficeFw.Access</PackageId>
+    <PackageTags>netoffice netofficefw NetOffice.Access office access interop wrapper vsto addin</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\MSComctlLib\MSComctlLibApi.csproj" />
+    <ProjectReference Include="..\MSDATASRC\MSDATASRCApi.csproj" />
+    <ProjectReference Include="..\Office\OfficeApi.csproj" />
+    <ProjectReference Include="..\DAO\DAOApi.csproj" />
+    <ProjectReference Include="..\VBIDE\VBIDEApi.csproj" />
+    <ProjectReference Include="..\ADODB\ADODBApi.csproj" />
+    <ProjectReference Include="..\OWC10\OWC10Api.csproj" />
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" />
+  </ItemGroup>
+</Project>

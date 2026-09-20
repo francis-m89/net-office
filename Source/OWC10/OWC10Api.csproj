@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>OWC10</AssemblyTitle>
+    <Description>Netoffice OWC10 Api</Description>
+    <RootNamespace>NetOffice.OWC10Api</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+
+  <ItemGroup>
+    <PackageReference Include="stdole" Version="[7.0.3300,)" NoWarn="NU1701" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADODB\ADODBApi.csproj" />
+    <ProjectReference Include="..\MSDATASRC\MSDATASRCApi.csproj" />
+    <ProjectReference Include="..\MSComctlLib\MSComctlLibApi.csproj" />
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>MSComctlLib</AssemblyTitle>
+    <Description>Netoffice MSComctlLib Api</Description>
+    <RootNamespace>NetOffice.MSComctlLibApi</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+
+  <ItemGroup>
+    <PackageReference Include="stdole" Version="[7.0.3300,)" NoWarn="NU1701" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" />
+  </ItemGroup>
+</Project>

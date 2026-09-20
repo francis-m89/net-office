@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>VBIDE</AssemblyTitle>
+    <Description>Netoffice VBIDE Api</Description>
+    <RootNamespace>NetOffice.VBIDEApi</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>NetOfficeFw.VBIDE</PackageId>
+    <Description>NetOffice VBIDE Access library.</Description>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+  <ItemGroup>
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" />
+    <ProjectReference Include="..\Office\OfficeApi.csproj" />
+  </ItemGroup>
+</Project>

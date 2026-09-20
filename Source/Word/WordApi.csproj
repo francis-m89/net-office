@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>NetOffice.WordApi</AssemblyTitle>
+    <Description>NetOffice Word library</Description>
+    <RootNamespace>NetOffice.WordApi</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>NetOfficeFw.Word</PackageId>
+    <PackageTags>netoffice netofficefw NetOffice.Word office word interop wrapper vsto addin</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+
+  <ItemGroup>
+    <PackageReference Include="stdole" Version="[7.0.3300,)" NoWarn="NU1701" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" />
+    <ProjectReference Include="..\Office\OfficeApi.csproj" />
+    <ProjectReference Include="..\VBIDE\VBIDEApi.csproj" />
+  </ItemGroup>
+</Project>

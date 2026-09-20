@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>NetOffice.ExcelApi</AssemblyTitle>
+    <Description>NetOffice Excel library</Description>
+    <RootNamespace>NetOffice.ExcelApi</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>NetOfficeFw.Excel</PackageId>
+    <PackageTags>netoffice netofficefw NetOffice.Excel office excel interop wrapper vsto addin</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <Import Project="..\NetOffice.props" />
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Office\OfficeApi.csproj" />
+    <ProjectReference Include="..\NetOffice\NetOffice.csproj" />
+    <ProjectReference Include="..\VBIDE\VBIDEApi.csproj" />
+  </ItemGroup>
+</Project>
